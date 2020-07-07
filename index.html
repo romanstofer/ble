@@ -6,8 +6,9 @@
   
 <button id="check" type="button">Click Me!</button>
 <script>
-  document.getElementById("check").addEventListener('pointerup', function(event){
+  document.getElementById("check").addEventListener("click", function(event){
   call navigator.bluetooth.requestDevice
+  document.getElementById("demo").innerHTML = "Hello World";
 });
     
 </script>
