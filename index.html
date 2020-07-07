@@ -4,14 +4,15 @@
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
   
-<button id="check" type="button">Click Me!</button>
-<script>
-  document.getElementById("check").addEventListener("click", function(event){
-  call navigator.bluetooth.requestDevice
-  document.getElementById("demo").innerHTML = "Hello World";
-});
-    
-</script>
+<button type="button" onclick="navigator.bluetooth.requestDevice({filters:[{services:[0xfd6f]}]})">Click Me!</button>
+
+//  <script>
+//  document.getElementById("check").addEventListener("click", function(event){
+//  call navigator.bluetooth.requestDevice
+//  document.getElementById("demo").innerHTML = "Hello World";
+//});
+//    
+//</script>
 
 </body>
 </html>
